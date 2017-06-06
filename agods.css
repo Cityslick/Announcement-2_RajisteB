@@ -1,0 +1,315 @@
+/*Cover Styling*/
+		
+	body, html {
+		margin: 0 auto;
+		height: 100%;
+		width: 100%;
+
+	}
+
+	h2 {
+		font-family: 'Monoton', cursive;
+		font-weight: 200;
+		font-size: 38pt;
+		color: #d8022d;
+		text-shadow: 8px 8px 10px black;
+		line-height: 110%;
+
+	}
+
+	h3 {
+		font-family: 'Oswald', cursive;
+		font-weight: 100;
+		font-size: 10pt;
+		letter-spacing: 2px;
+		color: white;
+	}
+	.topnav {
+	    background-color: #240000;
+	    margin: 0 auto;
+	    padding-top: 8px;
+	    position: fixed;
+	    text-align: center;
+	    width: 100%;
+	    height: 3%;
+	    z-index: 1;
+	    letter-spacing: 2px;
+	}
+
+	.topnav a {
+		padding: 10px;
+		margin: 3%;
+		list-style-type: none;
+		text-decoration: none;
+		color: white;
+		font-size: 15pt;
+		font-family: 'Barrio', cursive;
+	}
+
+	hr {
+		margin-top: 5%;
+		color: white;
+	}
+
+	#cvrphoto {
+		height: 100%;
+	}
+
+	video {
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+		position: fixed;
+	}
+
+	#covertext {
+		position: absolute;
+		color: white;
+		font-family: 'Bubbler One', sans-serif;
+		bottom: 35%;
+		padding: 4%;
+		font-size: 30px;
+
+	}
+
+
+
+	/*Cast*/
+
+	#casting {
+
+		height: 80%;
+		background-image: url("images/agcomic.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: relative;
+		background-color: white;
+		display: flex;
+		justify-content: space-around;
+		align-content: center;
+		flex-direction: row;
+		}
+
+	.flex {
+		margin-top: 15%;
+		color: red;
+		text-align: center;
+		height: 30vh;
+		width: 16vh;
+		border-radius: 10%;
+		border: 4px solid #7e0014;
+
+	} 
+
+	
+
+	#slot1 {
+		background-image: url("images/shadow.jpg");
+		background-size: cover;
+		background-position: center center;
+	}
+	#slot2 {
+		background-image: url("images/emilyb.jpg");
+		background-size: cover;
+		background-position: center center;
+	}
+	#slot3 {
+		background-image: url("images/McShane.jpg");
+		background-size: cover;
+		background-position: center center;
+	}
+	#slot4 {
+		background-image: url("images/crispin.jpg");
+		background-size: cover;
+		background-position: center center;
+	}
+	#slot5 {
+		background-image: url("images/techboy.jpg");
+		background-size: cover;
+		background-position: center center;
+	}
+	#slot6 {
+		background-image: url("images/pablolep.jpg");
+		background-size: cover;
+		background-position: center center;
+	}
+	#slot7 {
+		background-image: url("images/galucille.jpg");
+		background-size: cover;
+		background-position: center center;
+	}
+
+	/*Cast Info*/
+
+
+
+
+	ul li {
+		color: white;
+		display: inline;
+		text-decoration: none;
+		list-style-type: none;
+		word-spacing: 10%;
+		position: relative;
+		letter-spacing: 4px;
+		left: 5%;
+		font-family: 'Bubbler One', cursive;
+		font-size: 14pt;
+	}
+
+/*Trailer*/
+
+
+	#trailer {
+		background-image: url("images/fire-bull.jpg");
+		background-size: cover;
+		background-position: center center;
+		height: 80%;
+		width: 100%;
+	}
+
+	#trailr {
+		position: relative;
+		left: 18%;
+		top: 15%;
+		opacity: 0.8;
+	}
+
+/*Storyline*/
+
+	#Storyline {
+		background-image: url("images/desert.jpg");
+		background-size: cover;
+		opacity: 0.9;
+		height: 80%;
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+	}
+
+	div #story {
+		height: 80%;
+		width: 60%;
+		position: relative;
+		color: white;
+		text-align: center;
+		top: 15%;
+		left: 30%;
+		opacity: 0.8;
+		
+	}
+
+	h4 {
+		font-size: 18pt;
+		font-family: 'Tillana', cursive;
+		letter-spacing: 3px;
+		position: relative;
+		right: 20%;
+	}
+
+
+	/*Modal*/
+
+	.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	}
+
+	.modalDialog:target {
+		opacity:1;
+		pointer-events: auto;
+	}
+
+	.modalDialog > div {
+		width: 400px;
+		position: relative;
+		margin: 10% auto;
+		padding: 5px 20px 13px 20px;
+		border-radius: 10px;
+		background: grey;
+		color: black;
+		background: -moz-linear-gradient(#fff, #999);
+		background: -webkit-linear-gradient(#fff, #999);
+		background: -o-linear-gradient(#fff, #999);
+	}
+
+	.close {
+	background: #606061;
+	color: black;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+
+/*SlideShow*/
+	#slidecvr {
+		background-image: url("images/agcover.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+	}
+
+    #slideshow {
+        display: flex;
+        position: relative;
+        align-items: center;
+        left: 25%;
+        top: 10%;
+        height: 70%;
+        width: 70%;
+    }
+    img {
+        height: 70%;
+        width: 70%;
+        background-size: cover;
+        border-radius: 4%;	
+    }
+    #switch {
+        text-align: center;
+    }
+
+    button {
+    position: relative;
+    background-color: #b60e0e;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+	}
+
+    footer {
+    	height: 50px;
+    	position: absolute;
+    	width: 100%;
+    	color: white;
+    	background-color: black;
+    	text-align: center;
+    }
+

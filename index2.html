@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>American Gods</title>
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Bubbler+One|Rock+Salt|Oswald|Monoton|Monda|Barrio|Raleway" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="agods.css">
+</head>
+<body>
+<!-- NavBar -->
+
+<div class="topnav" id="myTopnav">
+  <a href="#cvrphoto">Home</a>
+  <a href="#casting">Cast</a>
+  <a href="#Storyline">Story</a>
+  <a href="#slideshow">Gallery</a>
+</div>
+
+<!-- Cover -->
+
+<div id="cvrphoto">
+	<video autoplay loop muted>
+	<source src="images/AmGodsAbandoned.mp4" type="video/mp4">
+	</video>
+
+</div>
+<div id="covertext">
+	<h2>AMERICAN <br>GODS</h2>
+	<h3><i>Based on the international bestseller by<br> Neil Gaiman</i></h3>
+	<h3><i>Developed by<br> Brian Fuller and Michael Green</i></h3>
+	<h3><i>Produced by<br> FreemantleMedia N.A.</i></h3>
+
+</div>
+
+
+<!-- Cast -->
+
+
+
+
+<div id=casting>
+
+	<div class="flex" id="slot1"></div>
+	<div class="flex" id="slot2"></div>
+	<div class="flex" id="slot3"></div>
+	<div class="flex" id="slot4"></div>
+	<div class="flex" id="slot5"></div>
+	<div class="flex" id="slot6"></div>
+	<div class="flex" id="slot7"></div>
+
+</div>
+
+<div class="cast_info">
+	<ul>
+		<li>| Ricky Whittle    |</li>
+		<li>Emily Browning   |</li>
+		<li>Ian McShane   |</li>
+		<li>Crispin Glover   |</li>
+		<li>Bruce Langley   |</li>
+		<li>Pablo Schreiber   |</li>
+		<li>Gillian Anderson   |</li>
+	</ul>
+	</div>
+
+<!-- Trailer -->
+
+<!-- <div id="trailer">
+	<iframe id="trailr" width="900" height="515" src="https://www.youtube.com/embed/3awG5wEE7LU" frameborder="0" allowfullscreen></iframe>
+</div> -->
+
+<!-- Story -->
+
+<div id="Storyline">
+	<div id="story">
+		<h4>Adapted from a Hugo and Nebula Award-winning novel by author Neil Gaiman, this show blends strands of Americana, fantasy and both ancient and modern mythology. The power of these mythological beings diminish and society's beliefs waned. New gods have arisen, reflecting American obsessions with media, celebrity and technology.</h4>
+		<a href="#openModal" style="color: white;">LEARN MORE</a>
+
+		<div id="openModal" class="modalDialog">
+			<div>
+				<a href="#close" title="Close" class="close">X</a>
+				<h2>Premise</h2>
+				<p>The series focuses on Shadow Moon (Ricky Whittle), a man serving three years in prison. With only days remaining in his sentence, Shadow is given an unexpected early release after his beloved wife Laura (Emily Browning) dies in an accident. On his way home for her funeral, he meets a strange man named Mr. Wednesday (Ian McShane), who appears to be nothing but a con artist, and accepts to be his bodyguard; however, he soon finds himself a part of a large-scale conflict between greater beings, as Wednesday, in truth the god Odin, makes his way across America to gather all the old gods (who have now incorporated themselves into American life) and confront the New Gods, led by Mr. World (Crispin Glover) and growing stronger each day.</p>
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Slideshow -->
+
+<div id="slidecvr">
+	<div id="slideshow">
+		<img class="slide" src="http://es.web.img2.acsta.net/newsv7/17/03/27/22/24/518992.jpg" alt="">
+		<img class="slide" src="https://pmctvline2.files.wordpress.com/2017/01/american-gods-season-1-premiere-date.png?w=620" alt="">
+		<img class="slide" src="http://digitalspyuk.cdnds.net/17/13/1600x800/landscape-1490789335-american-gods-characterart-shadowmoon-amazon.jpg" alt="">
+		<img class="slide" src="http://cimg.tvgcdn.net/i/r/2017/05/02/19f33735-f760-4209-b792-322d418567cb/crop/740x445+0+0/thumbnail/770x463/9b8958ff9f69e1dabfab22444f031f22/170502-orlandojones-hp-lg.jpg" alt="">
+		<img class="slide" src="http://assets1.ignimgs.com/2017/05/12/american-gods-head-full-of-snow-photo005-1494608762867_1280w.jpg" alt="">
+		<img class="slide" src="https://i.kinja-img.com/gawker-media/image/upload/s--XKIAEcIh--/c_scale,fl_progressive,q_80,w_800/ryvweyrct8kemuvbh068.jpg" alt="">
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<div id="switch">
+		<button onclick="plusDivs(-1)">back</button>
+		<button onclick="plusDivs(1)">next</button>
+	</div>
+</div>
+	<br>
+	<br>
+<footer>
+	All Rights Reserved.
+</footer>
+
+<script type="text/javascript">
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    function plusDivs(n) {
+        showDivs(slideIndex += n)
+    }
+    function showDivs(n) {
+        var i = 0;
+        var x = document.getElementsByClassName("slide");
+        if (n > x.length) {
+            slideIndex = 1;
+        }
+        if (n < 1) {
+            slideIndex = x.length
+        }
+        while(i < x.length) {
+            x[i].style.display = "none";
+            i++;
+        }
+        x[slideIndex-1].style.display = "block";
+    }
+
+</script>
+
+</body>
+</html>
